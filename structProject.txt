@@ -1,0 +1,7 @@
+email_service/
+├── config.py
+├── email_utils.py
+├── tasks.py
+├── worker.py
+├── main.py           ← 🌐 FastAPI API
+├── example_producer.py

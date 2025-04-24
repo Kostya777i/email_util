@@ -1,0 +1,17 @@
+1.	Установи зависимости:
+pip install celery redis
+
+2.	Убедись, что Redis работает:
+docker run -p 6379:6379 redis.  # или установи локально и запусти вручную
+
+3.	Запусти воркера (в новом терминале):
+python worker.py
+
+4.	Отправь задачу (в другом терминале):
+python example_producer.py
+
+запустить REST API:
+pip install fastapi uvicorn
+
+Запусти API:
+uvicorn main:app --reload
